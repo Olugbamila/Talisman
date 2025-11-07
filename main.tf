@@ -60,10 +60,10 @@ module "instance" {
   source = "./module/instance"
 }
 
-module "s3" {
-  source = "./module/s3"
-}
+# module "s3" {
+#   source = "./module/s3"
+# }
 
-module "vpc" {
-  source = "./module/vpv"
-}
+# module "vpc" {
+#   source = "./module/vpv"
+# }

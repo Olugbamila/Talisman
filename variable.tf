@@ -36,14 +36,14 @@ variable "environment" {
 
 }
 
-variable "bucket_id" {
+# variable "bucket_id" {
 
-}
+# }
 
-variable "Name" {
+# variable "Name" {
 
-}
+# }
 
-variable "Env" {
+# variable "Env" {
 
-}
+# }

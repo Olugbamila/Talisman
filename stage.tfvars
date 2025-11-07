@@ -1,5 +1,5 @@
 ami           = "ami-0341d95f75f311023"
 instance_type = "t3.micro"
 environment   = "production"
-bucket        = "oluwagbadurami"
-name          = "christo"
+# bucket        = "oluwagbadurami"
+# name          = "christo"
