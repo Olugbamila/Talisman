@@ -13,7 +13,7 @@ resource "aws_instance" "instance" {
   count         = 1
 
   tags = {
-    Name        = "gbamil. - ${count.index + 1}"
+    Name        = "gbamila. - ${count.index + 1}"
     Environment = "Dev"
   }
 }
