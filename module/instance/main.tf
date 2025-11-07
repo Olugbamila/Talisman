@@ -10,7 +10,7 @@ resource "aws_instance" "instance" {
                  systemctl enable nginx
                  EOF
 
-  count         = 1
+  count         = 2
 
   tags = {
     Name        = "gb. - ${count.index + 1}"
