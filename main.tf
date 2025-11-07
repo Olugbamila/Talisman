@@ -22,31 +22,48 @@
 
 
 
-resource "aws_instance" "instance" {
-  ami           = var.ami_id
-  instance_type = var.instance_type
+# resource "aws_instance" "instance" {
+#   ami           = var.ami_id
+#   instance_type = var.instance_type
 
-  user_data = <<-EOF
-              #!/bin/bash
-              apt update
-              apt install nginx -y
-              systemctl start nginx
-              systemctl enable nginx
-              EOF
+#   user_data = <<-EOF
+#               #!/bin/bash
+#               apt update
+#               apt install nginx -y
+#               systemctl start nginx
+#               systemctl enable nginx
+#               EOF
 
-  count = 1
+#   count = 1
 
-  tags = {
-    Name        = "olugba - ${count.index + 1}"
-    environment = var.environment
-  }
+#   tags = {
+#     Name        = "olugba - ${count.index + 1}"
+#     environment = var.environment
+#   }
+# }
+
+# resource "aws_s3_bucket" "example" {
+#   bucket = var.bucket_id
+
+#   tags = {
+#     Name        = var.Name
+#     environment = var.Env
+#   }
+# }
+
+# Create a VPC
+# resource "aws_vpc" "example" {
+#   cidr_block = "10.0.0.0/16"
+# }
+
+module "instance" {
+  source = "./module/instance"
 }
 
-resource "aws_s3_bucket" "example" {
-  bucket = var.bucket_id
+module "s3" {
+  source = "./module/s3"
+}
 
-  tags = {
-    Name        = var.Name
-    environment = var.Env
-  }
+module "vpc" {
+  source = "./module/vpv"
 }
