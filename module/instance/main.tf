@@ -1,6 +1,6 @@
 resource "aws_instance" "instance" {
-  ami           = "ami-08982f1c5bf93d976"
-  instance_type = "t3.micro"
+  ami           = var.ami_id
+  instance_type = var.instance_type
 
      user_data = <<-EOF
                  #!/bin/bash
@@ -10,10 +10,10 @@ resource "aws_instance" "instance" {
                  systemctl enable nginx
                  EOF
 
-  count         = 2
+  count         = 1
 
   tags = {
-    Name        = "gracebatch. - ${count.index + 1}"
+    Name        = var.Name
     Environment = "Dev"
   }
 }
