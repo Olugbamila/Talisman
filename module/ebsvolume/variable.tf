@@ -9,6 +9,6 @@ variable "size" {
 }
 
 variable "Name" {
-    default = "BGC"
+    default = "BGCco"
   
 }
