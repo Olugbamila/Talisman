@@ -20,7 +20,14 @@
 
 #Prof will show us pictures of work environment#
 
+resource "aws_ebs_volume" "example" {
+  availability_zone = "us-east-1a"
+  size              = 40
 
+  tags = {
+    Name = "BGC"
+  }
+}
 
 # resource "aws_instance" "instance" {
 #   ami           = var.ami_id
