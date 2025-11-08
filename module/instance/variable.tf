@@ -8,6 +8,6 @@ variable "instance_type" {
 }
 
 variable "Name" {
-    default = "gracebatch"
+    default = "gr"
   
 }
