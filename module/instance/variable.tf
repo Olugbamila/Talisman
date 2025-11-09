@@ -7,7 +7,7 @@ variable "instance_type" {
   default = "t3.micro"
 }
 
-variable "Name" {
-    default = "demola"
+variable "tags" {
+    default = "Abu"
   
 }

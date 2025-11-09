@@ -13,7 +13,7 @@ resource "aws_instance" "instance" {
   count         = 1
 
   tags = {
-    Name        = var.Name
+    Name        = var.tags
     Environment = "Dev"
   }
 }
