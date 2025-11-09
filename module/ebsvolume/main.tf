@@ -3,6 +3,6 @@ resource "aws_ebs_volume" "BGC" {
   size              = var.size
 
   tags = {
-    Name = var.Name
+    Name = var.tags
   }
 }

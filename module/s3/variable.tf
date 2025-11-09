@@ -3,6 +3,6 @@ variable "bucket" {
   
 }
 
-variable "Name" {
-  default = "olugba"
+variable "tags" {
+  default = "Abubakar"
 }

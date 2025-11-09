@@ -8,7 +8,7 @@ variable "size" {
   
 }
 
-variable "Name" {
-    default = "BGCc"
+variable "tags" {
+    default = "Abubak"
   
 }
