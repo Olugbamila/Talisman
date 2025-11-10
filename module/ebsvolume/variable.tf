@@ -1,14 +1,14 @@
-variable "availability_zone" {
-default = "us-east-1a"
+# variable "availability_zone" {
+# default = "us-east-1a"
   
-}
+# }
 
-variable "size" {
-    default = "40"
+# variable "size" {
+#     default = "40"
   
-}
+# }
 
-variable "tags" {
-    default = "Shabass"
+# variable "tags" {
+#     default = "Shabass"
   
-}
+# }
