@@ -9,6 +9,6 @@ variable "size" {
 }
 
 variable "tags" {
-    default = "Abubak"
+    default = "Shabass"
   
 }

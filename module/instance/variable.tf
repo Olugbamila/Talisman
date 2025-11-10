@@ -8,6 +8,6 @@ variable "instance_type" {
 }
 
 variable "tags" {
-    default = "Abubak"
+    default = "shabase"
   
 }
